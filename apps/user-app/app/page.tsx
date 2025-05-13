@@ -9,6 +9,7 @@ export default async function Page() {
   if (session?.user) {
     console.log("user logged in",session?.user)
     redirect('/dashboard')
+    //navigating to the dashboard path
   } else {
     redirect('/api/auth/signin')
   }
